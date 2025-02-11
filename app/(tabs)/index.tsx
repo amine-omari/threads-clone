@@ -1,5 +1,6 @@
-import { SafeAreaView, Text, View } from "react-native";
+import { SafeAreaView } from "react-native";
 import { HStack } from "@/components/ui/hstack";
+import { Text } from "@/components/ui/text";
 
 export default function HomeScreen() {
   return (

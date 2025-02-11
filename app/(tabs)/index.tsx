@@ -6,6 +6,7 @@ export default function HomeScreen() {
     <View>
       <HStack>
         <Text className="text-2xl font-bold">Home Screen</Text>
+        <Text className="text-2xl font-bold">Test</Text>
       </HStack>
     </View>
   );

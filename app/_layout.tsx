@@ -31,10 +31,12 @@ export default function RootLayout() {
   }
 
   return (
-    <GluestackUIProvider mode="light"><Stack>
+    <GluestackUIProvider mode="light">
+      <Stack>
         <StatusBar style="auto" />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
-      </Stack></GluestackUIProvider>
+      </Stack>
+    </GluestackUIProvider>
   );
 }

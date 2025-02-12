@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import React from "react";
-import Ionicons from "@expo/vector-icons/build/Ionicons";
+import { Home } from "lucide-react-native";
 
 export default function TabLayout() {
   return (
@@ -13,14 +13,8 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "home" : "home-outline"}
-              color={color}
-              size={24}
-            />
-          ),
+          title: "",
+          tabBarIcon: ({ color }) => <Home color={color} size={24} />,
         }}
       />
     </Tabs>

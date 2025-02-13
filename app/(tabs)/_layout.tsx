@@ -1,8 +1,10 @@
-import { Tabs } from "expo-router";
+import { Tabs, useRouter } from "expo-router";
 import React from "react";
 import { Heart, Home, Plus, Search, User } from "lucide-react-native";
 
 export default function TabLayout() {
+  const router = useRouter();
+
   return (
     <Tabs
       screenOptions={{
@@ -29,6 +31,12 @@ export default function TabLayout() {
         options={{
           title: "",
           tabBarIcon: ({ color }) => <Plus color={color} size={24} />,
+        }}
+        listeners={{
+          tabPress: (e) => {
+            console.log(e);
+            router.push("/post");
+          },
         }}
       />
       <Tabs.Screen
